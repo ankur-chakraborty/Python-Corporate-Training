@@ -8,5 +8,5 @@ print(names[-1])
 print(mixed[3])
 
 
-names.insert("Tuneer",1)
+names.insert(1, "Tuneer")
 names.append("Sam")
