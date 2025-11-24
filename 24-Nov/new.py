@@ -10,3 +10,8 @@ print(mixed[3])
 
 names.insert(1, "Tuneer")
 names.append("Sam")
+
+names.remove("Sam")
+names.pop(2) #index pop
+names.pop() #last element pop
+del names[0]
