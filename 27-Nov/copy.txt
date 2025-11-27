@@ -1,0 +1,6 @@
+I am Ankur.
+I am 22 years old.
+I am a graduate from Amity University Kolkata in Computer Science and Engineering
+Currently I am working at EY as a ASE.
+I love cars.
+Appended line to notes.txt
