@@ -1,0 +1,5 @@
+Petrol 5000
+Gym 625
+Protein Shake 2000
+Misc 5000
+Car Parts 10000
