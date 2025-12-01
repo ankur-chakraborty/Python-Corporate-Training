@@ -1,0 +1,4 @@
+OrderID,Date,Store,City,Product,Category,Quantity,UnitPrice,TotalPrice,PaymentMethod,CustomerType,TotalValue
+1006,2024-01-07,Store C,Bangalore,T-Shirt,Apparel,4,800,3200,Credit Card,Returning,3200
+1003,2024-01-06,Store C,Bangalore,Jeans,Apparel,2,1500,3000,Credit Card,New,3000
+1020,2024-01-13,Store B,Delhi,Shirt,Apparel,2,1100,2200,Credit Card,Returning,2200
