@@ -1,4 +1,7 @@
+a=int(input("enter a:"))
+b=int(input("enter b:"))
+
 try:
-    x=10/0
+    x=a/b
 except ZeroDivisionError:
     print("ZeroDivisionError")
