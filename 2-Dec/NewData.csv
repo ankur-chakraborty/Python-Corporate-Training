@@ -1,0 +1,31 @@
+OrderID,OrderDate,ShipDate,Region,City,CustomerID,CustomerName,Segment,Category,SubCategory,ProductName,Quantity,UnitPrice,Discount,Sales,Profit,Returned
+1001,2024-01-02,2024-01-05,West,Los Angeles,C001,David Miller,Consumer,Technology,Laptops,HP Pavilion 15,1,720,0,720,95,No
+1002,2024-01-02,2024-01-06,Central,Chicago,C002,Sarah Johnson,Corporate,Furniture,Chairs,ErgoMax Pro Chair,2,140,0.1,252,30,No
+1003,2024-01-03,2024-01-07,East,New York,C003,John Lee,Home Office,Office Supplies,Binders,Premium Binder Pack,5,12,0,60,11,No
+1004,2024-01-03,2024-01-08,South,Miami,C004,Ana Gomez,Consumer,Technology,Phones,Samsung Galaxy A54,1,399,0.05,379.05,48,No
+1005,2024-01-04,2024-01-09,West,Seattle,C005,Karen Black,Consumer,Furniture,Tables,Oak Wooden Table,1,450,0,450,52,Yes
+1006,2024-01-04,2024-01-08,Central,Denver,C006,Robert Brown,Corporate,Office Supplies,Pens,Blue Pen Pack (20),3,8,0,24,5,No
+1007,2024-01-05,2024-01-10,East,Boston,C007,Emily Davis,Consumer,Technology,Accessories,Wireless Mouse,4,18,0,72,14,No
+1008,2024-01-05,2024-01-11,South,Atlanta,C008,Kyle Young,Home Office,Furniture,Chairs,ComfortMesh Chair,1,160,0.15,136,19,No
+1009,2024-01-06,2024-01-12,West,Portland,C009,Sophia Hill,Consumer,Technology,Phones,iPhone SE,2,429,0,858,115,No
+1010,2024-01-06,2024-01-13,Central,St. Louis,C010,Tom Harris,Corporate,Office Supplies,Paper,A4 Copier Paper(500),10,5,0,50,6,No
+1011,2024-01-07,2024-01-14,East,Philadelphia,C011,Olivia Adams,Home Office,Furniture,Tables,Adjustable Standing Desk,1,320,0.1,288,35,No
+1012,2024-01-07,2024-01-15,South,Orlando,C012,Ethan Clark,Consumer,Technology,Accessories,USB-C Cable,6,9,0,54,12,No
+1013,2024-01-08,2024-01-16,West,San Diego,C013,Isabella Scott,Consumer,Furniture,Sofas,Modern Sofa 3-Seater,1,850,0.2,680,88,Yes
+1014,2024-01-08,2024-01-17,Central,Minneapolis,C014,George Wilson,Corporate,Office Supplies,Markers,Color Marker Set,4,7,0,28,4,No
+1015,2024-01-09,2024-01-18,East,Newark,C015,Abigail Perez,Consumer,Technology,Tablets,iPad 10th Gen,1,450,0.05,427.5,60,No
+1016,2024-01-09,2024-01-19,South,Charlotte,C016,Noah Walker,Home Office,Furniture,Desks,Compact Writing Desk,1,210,0,210,27,No
+1017,2024-01-10,2024-01-20,West,Las Vegas,C017,Michael Green,Consumer,Technology,TVs,Sony 43-inch LED,1,540,0.1,486,62,No
+1018,2024-01-10,2024-01-21,Central,Columbus,C018,Chloe Ramirez,Corporate,Office Supplies,Notebooks,Hardcover Notebook,8,4,0,32,6,No
+1019,2024-01-11,2024-01-22,East,Baltimore,C019,Lucas Cook,Consumer,Technology,Accessories,Laptop Stand,2,24,0,48,12,No
+1020,2024-01-11,2024-01-23,South,Nashville,C020,Ava Howard,Home Office,Furniture,Chairs,Executive Leather Chair,1,260,0.05,247,28,No
+1021,2024-01-12,2024-01-24,West,Sacramento,C021,Daniel Ward,Consumer,Furniture,Bed,Queen Bed Frame,1,600,0.1,540,72,Yes
+1022,2024-01-12,2024-01-25,Central,Kansas City,C022,Harper Reed,Corporate,Office Supplies,Envelopes,White Envelope Pack,6,3,0,18,3,No
+1023,2024-01-13,2024-01-26,East,Pittsburgh,C023,Benjamin Brooks,Consumer,Technology,Accessories,Keyboard,3,22,0.1,59.4,9,No
+1024,2024-01-13,2024-01-27,South,San Antonio,C024,Grace Bennett,Home Office,Furniture,Shelves,Wooden Shelf Unit,1,180,0,180,24,No
+1025,2024-01-14,2024-01-28,West,Fresno,C025,Elijah Rivera,Consumer,Technology,Laptops,Dell Inspiron 14,1,640,0,640,85,No
+1026,2024-01-14,2024-01-29,Central,Indianapolis,C026,Mia Mitchell,Corporate,Office Supplies,Stapler,Premium Stapler,2,14,0,28,5,No
+1027,2024-01-15,2024-01-30,East,Cleveland,C027,Henry Price,Consumer,Furniture,Tables,Round Dining Table,1,520,0.05,494,58,No
+1028,2024-01-15,2024-01-31,South,Dallas,C028,Lily Torres,Home Office,Technology,Printers,HP LaserJet Pro,1,290,0,290,34,No
+1029,2024-01-16,2024-02-01,West,San Jose,C029,Owen Jenkins,Consumer,Office Supplies,Binders,Premium Binders (12),2,11,0,22,4,No
+1030,2024-01-16,2024-02-02,Central,Detroit,C030,Aiden Lewis,Corporate,Technology,Accessories,Webcam,1,45,0,45,9,No
