@@ -1,0 +1,13 @@
+sub_id,customer_name,start_date,expiry_date,created_at,plan_type,days_left,age_days,status,days_overdue,next_billing_date,renewal_value
+1,Aisha Khan,2024-12-15,2025-01-15,15-12-2024 10:30,Monthly,-324,355,Expired,324,2025-01-15,1000
+2,Rahul Sharma,2025-01-05,2025-02-05,05-01-2025 09:45,Monthly,-303,334,Expired,303,2025-02-05,1000
+3,Imran Ali,2025-02-10,2025-03-10,10-02-2025 14:12,Monthly,-270,298,Expired,270,2025-03-10,1000
+4,Meera Iyer,2025-03-01,2025-04-01,01-03-2025 17:05,Monthly,-248,279,Expired,248,2025-04-01,1000
+5,Sanjay Patel,2025-02-20,2025-05-21,20-02-2025 13:00,Quarterly,-198,288,Expired,198,2025-05-21,2700
+6,Neha Gupta,2024-06-10,2025-06-10,10-06-2024 08:15,Yearly,-178,543,Expired,178,2025-06-10,10000
+7,Arjun Mehta,2025-11-25,2025-12-25,25-11-2025 11:00,Monthly,20,10,Active,0,2025-12-25,1000
+8,Priya Nair,2025-12-01,2025-12-31,01-12-2025 12:00,Monthly,26,4,Active,0,2025-12-31,1000
+9,Ravi Kumar,2025-11-30,2025-12-07,30-11-2025 09:00,Monthly,2,5,ExpiringSoon,0,2025-12-07,1000
+10,Sneha Roy,2025-01-10,2026-01-10,10-01-2025 08:00,Yearly,36,329,Active,0,2026-01-10,10000
+11,Vikram Singh,2025-10-01,2025-12-30,01-10-2025 10:15,Quarterly,25,65,Active,0,2025-12-30,2700
+12,Kiran Das,2025-11-05,2025-12-05,05-11-2025 10:45,Monthly,0,30,ExpiringSoon,0,2025-12-05,1000
