@@ -1,0 +1,25 @@
+{% extends "tasks/base.html" %}
+{% block content %}
+<h2>{% if task %}Edit Task{% else %}Add New Task{% endif %}</h2>
+
+<form method="post">
+    {% csrf_token %}
+    <div>
+        {{ form.non_field_errors }}
+        <label>Title</label>
+        {{ form.title }}
+        {{ form.title.errors }}
+    </div>
+
+    <div>
+        <label>Description</label>
+        {{ form.description }}
+        {{ form.description.errors }}
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        {% if task %}Update{% else %}Add Task{% endif %}
+    </button>
+    <a href="{% url 'tasks:index' %}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endblock %}

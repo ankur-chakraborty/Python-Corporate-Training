@@ -1,0 +1,52 @@
+<!-- templates/index.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<h2 class="mb-4">All Tasks</h2>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Created</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for task in tasks %}
+        <tr>
+            <td>{{ task.title }}</td>
+            <td>{{ task.description }}</td>
+            <td>
+                {% if task.status == "Pending" %}
+                    <span class="badge bg-warning">Pending</span>
+                {% else %}
+                    <span class="badge bg-success">Completed</span>
+                {% endif %}
+            </td>
+            <td>{{ task.created_at.strftime('%Y-%m-%d %H:%M') }}</td>
+
+            <td>
+                {% if task.status == "Pending" %}
+                <a href="{{ url_for('complete_task', task_id=task.id) }}"
+                    class="btn btn-sm btn-success">Complete</a>
+                {% endif %}
+
+                <a href="{{ url_for('edit_task', task_id=task.id) }}"
+                    class="btn btn-sm btn-primary">Edit</a>
+
+                <a href="{{ url_for('delete_task', task_id=task.id) }}"
+                    class="btn btn-sm btn-danger"
+                    onclick="return confirm('Delete this task?');">
+                    Delete
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

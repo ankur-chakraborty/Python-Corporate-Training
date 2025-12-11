@@ -1,0 +1,45 @@
+{% extends "tasks/base.html" %}
+{% block content %}
+<h2>All Tasks</h2>
+ 
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Created</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for task in tasks %}
+        <tr>
+            <td>{{ task.title }}</td>
+            <td>{{ task.description|default:'—' }}</td>
+            <td>
+                {% if task.status == "Pending" %}
+                    <span class="badge badge-warning">Pending</span>
+                {% else %}
+                    <span class="badge badge-success">Completed</span>
+                {% endif %}
+            </td>
+            <td>{{ task.created_at|date:"Y-m-d H:i" }}</td>
+            <td>
+                {% if task.status == "Pending" %}
+                <a href="{% url 'tasks:complete' task.pk %}" class="btn btn-success">Complete</a>
+                {% else %}
+                <a href="{% url 'tasks:complete' task.pk %}" class="btn btn-secondary">Undo</a>
+                {% endif %}
+ 
+                <a href="{% url 'tasks:edit' task.pk %}" class="btn btn-primary">Edit</a>
+ 
+                <a href="{% url 'tasks:delete' task.pk %}" class="btn btn-danger" onclick="return confirm('Delete this task?');">Delete</a>
+            </td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="5">No tasks yet — add one!</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

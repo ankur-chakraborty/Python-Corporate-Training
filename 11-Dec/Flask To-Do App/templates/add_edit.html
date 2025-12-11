@@ -1,0 +1,28 @@
+<!-- templates/add_edit.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<h2 class="mb-4">
+    {% if task %} Edit Task {% else %} Add New Task {% endif %}
+</h2>
+
+<form method="POST">
+    <div class="mb-3">
+        <label class="form-label">Task Title</label>
+        <input type="text" name="title" class="form-control"
+               value="{{ task.title if task else '' }}" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Description</label>
+        <textarea name="description" class="form-control" rows="4">{{ task.description if task else '' }}</textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        {% if task %} Update {% else %} Add Task {% endif %}
+    </button>
+
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">Cancel</a>
+</form>
+
+{% endblock %}

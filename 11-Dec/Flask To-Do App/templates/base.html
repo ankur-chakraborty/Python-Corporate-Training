@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask To-Do App</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+ 
+    <!-- Navbar -->
+    <div class="navbar">
+        <span class="navbar-title">📝 To-Do List</span>
+        <a href="{{ url_for('add_task') }}">Add Task</a>
+    </div>
+ 
+    <!-- Flash messages -->
+    <div class="container">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category, message in messages %}
+              <div class="alert alert-{{ category }}">{{ message }}</div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+    </div>
+ 
+    <!-- Page content -->
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+ 
+</body>
+</html>
+ 
